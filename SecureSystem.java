@@ -1,10 +1,13 @@
+// implement create, destroy, run
+// create and destroy objects inside create and destroy methods
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class SecureSystem {
 	
-	public static final InstructionObject BadInstruction = new InstructionObject("BAD", null, null, -1);
+	public static final InstructionObject BadInstruction = new InstructionObject("BAD", null, "", -1);
 
 
 	public static void main(String[] args) throws FileNotFoundException {
@@ -79,12 +82,24 @@ public static InstructionObject parseInstruction(String line, SubjectManager lyl
 			} else {
 				return BadInstruction;
 			}
-		} else {
+		}
+		else if(ins[0].matches("create")) {
+
+			
+
+		}
+		else if(ins[0].matches("delete")) {
+
+		}
+		else if(ins[0].matches("run")) {
+			
+		}
+		else {
 			return BadInstruction;
 		}
-	} else {
+	} 
 		return BadInstruction;
-	}
+	
 
 }
 

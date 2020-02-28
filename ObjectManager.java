@@ -4,7 +4,6 @@ public class ObjectManager {
 	private int value; 
 	private SecurityLevel level;
 
-
 	public ObjectManager(String name, SecurityLevel level) {
 		this.name = name;
 		this.level = level;

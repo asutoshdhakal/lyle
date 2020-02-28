@@ -13,6 +13,13 @@ public class InstructionObject {
 		this.value = value;
 	}
 
+	public InstructionObject(String instructionType, SubjectManager subject, String objectName, int value) {
+		this.instructionType = instructionType;
+		this.subject = subject; 
+		this.object = object; 
+		this.value = value;
+	}
+
 	public int getValue() {
 		return this.value;
 	}
